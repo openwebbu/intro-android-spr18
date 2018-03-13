@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sean.tipcalculator.MainActivity">
+
+    <EditText
+        android:id="@+id/totalEditTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tipSeekBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:hint="Bill Total"
+        android:inputType="numberDecimal" />
+
+    <SeekBar
+        android:id="@+id/tipSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/totalEditTxt"
+        android:layout_alignStart="@+id/totalEditTxt"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/tipPercentTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tipSeekBar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        android:text="Tip: 0%" />
+
+    <TextView
+        android:id="@+id/tipTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tipSeekBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:text="Tip: $0" />
+
+    <TextView
+        android:id="@+id/totalTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tipTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="Total: $0"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/splitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="69dp"
+        android:text="Split the bill" />
+
+</RelativeLayout>
