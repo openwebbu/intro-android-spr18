@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sean.tipcalculator.SplitActivity">
+
+    <EditText
+        android:id="@+id/numEditTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="161dp"
+        android:ems="10"
+        android:hint="Number of people"
+        android:inputType="number" />
+    <TextView
+        android:id="@+id/billTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/totalTxt"
+        android:layout_centerVertical="true"
+        android:text="From bill (per person):" />
+
+    <TextView
+        android:id="@+id/tipTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/numEditTxt"
+        android:layout_below="@+id/numEditTxt"
+        android:layout_marginTop="63dp"
+        android:text="Tip (per person):" />
+
+    <TextView
+        android:id="@+id/totalTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tipTxt"
+        android:layout_below="@+id/tipTxt"
+        android:layout_marginTop="22dp"
+        android:text="Total (per person):"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/doneBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/totalTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:text="Done" />
+
+
+</RelativeLayout>
