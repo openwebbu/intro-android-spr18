@@ -22,6 +22,9 @@
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/totalEditTxt"
         android:layout_alignStart="@+id/totalEditTxt"
+        android:min="0"
+        android:progress="18"
+        android:max="100"
         android:layout_centerVertical="true" />
 
     <TextView
@@ -31,7 +34,7 @@
         android:layout_alignBottom="@+id/tipSeekBar"
         android:layout_alignParentStart="true"
         android:layout_marginStart="18dp"
-        android:text="Tip: 0%" />
+        android:text="Tip: 18%" />
 
     <TextView
         android:id="@+id/tipTxt"
@@ -40,7 +43,7 @@
         android:layout_below="@+id/tipSeekBar"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="43dp"
-        android:text="Tip: $0" />
+        android:text="Tip: $0.0" />
 
     <TextView
         android:id="@+id/totalTxt"
@@ -49,7 +52,7 @@
         android:layout_below="@+id/tipTxt"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="17dp"
-        android:text="Total: $0"
+        android:text="Total: $0.0"
         android:textSize="18sp"
         android:textStyle="bold" />
 
