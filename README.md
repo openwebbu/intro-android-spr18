@@ -33,4 +33,24 @@
       - `totalEditTxt.addTextChangedListener(new TextWatcher() {...`
       - Add logic within event handler to update textviews based on bill total being changed
     - Add event listener for button to navigate to SplitActivity
-    
+4. Create a new Activity `SplitActivity`. Go to the XML and...
+    - Add EditText for entering the number of people in the party
+    - Add three TextViews
+      - One for showing the original bill, split between the party
+      - One for showing the tip total, split between the party
+      - One for showing the final total, split between the party
+5. Go to `SplitActivity.java`
+    - Add binding for the components in XML (i.e. EditText, TextView, etc)
+    - Add double variables for tip, bill total, final total from the first Activity and variables for current activity to compute the split
+      ```
+      private double billTotal, tipTotal, finalTotal;
+      private int numPeople;
+      private double billPerPerson, tipPerPerson, totalPerPerson;
+      ```
+    - Add event listener for number of people EditTxt
+      - `totalEditTxt.addTextChangedListener(new TextWatcher() {...`
+      - Add logic within event handler to update textviews based on the number of people changing
+    - Add event listener for done button
+      - `doneBtn.setOnClickListener(new View.OnClickListener() {...`
+      - Add logic within event handler to go back to first activity if user is finished
+6. Refactor event handler code with new methods so that repeated code can be removed 
